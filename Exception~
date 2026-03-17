@@ -1,0 +1,16 @@
+list_number = [52, 273, 32, 72, 100]
+
+try:
+    number_input = int(input("정수입력 > "))
+    print(f"{number_input}번째 요소 : {list_number[number_input]}")
+    예외.발생()
+
+except ValueError as exception:
+    print("정수를 입력하세요!")
+    print(type(exception), exception)
+except IndexError as exception:
+    print("리스트의 인덱스를 벗어났어요")
+    print(type(exception), exception)
+except Exception as exception:
+    print("미리파악하지못한 예외가발생했습니다")
+    print(type(exception), exception)
