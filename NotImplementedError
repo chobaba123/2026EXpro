@@ -1,0 +1,6 @@
+number = int(input("정수입력 > "))
+
+if number > 0:
+    raise NotImplementedError
+else:
+    raise NotImplementedError
