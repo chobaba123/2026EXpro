@@ -1,0 +1,10 @@
+list_number = [52,273,32,72,100]
+
+try:
+    print(list_number)
+    number_input = int(input("0번째 ~ 4번째 정수입력 > "))
+    print(f"{number_input}번째 요소 : {list_number[number_input]}")
+except ValueError as a:
+    print("정수를 입력해 주세요!",a)
+except IndexError as b:
+    print("리스트의 인덱스를 벗어났어요!",b)
